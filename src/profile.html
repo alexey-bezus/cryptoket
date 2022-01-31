@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Profile"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<div class="page__profile profile">
+
+				<div class="profile__bg">
+					<img class="profile__image" src="@img/profile/profile_bg.jpg" alt="">
+				</div>
+
+				<div class="profile__body">
+					<div class="profile__person">
+						<img class="profile__avatar" src="@img/profile/person_1.png" alt="">
+					</div>
+					<div class="profile__name">Mia Ayana</div>
+				</div>
+
+			</div>
+
+			<div class="profile__container">
+				<div class="profile__search search-profile">
+					<div class="search-profile__form">
+						<form action="#" class="search-profile__items">
+							<div class="search-profile__item">
+								<button type="submit" class="search-profile__btn _icon-search"></button>
+								<input type="text" placeholder="Search Item Here" class="search-profile__input">
+							</div>
+							<select name="form[]" class="form">
+								<option value="" selected>Recently Listed</option>
+								<option value="2">Recently Listed</option>
+								<option value="3">Recently Listed</option>
+								<option value="4">Recently Listed</option>
+							</select>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+			<section class="page__bids bids bids_padding">
+				<div class="bids__container">
+					<h2 class="gallery__title _title">Items</h2>
+					@@include('html/_products__gallery.htm',{})
+				</div>
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

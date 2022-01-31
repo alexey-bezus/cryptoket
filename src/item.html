@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Item"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="page__item item">
+				<div class="item__container">
+					<div class="item__body">
+
+						<div class="item__img">
+							<div class="item__image-ibg">
+								<img src="@img/item/item_jpg.jpg" alt="Abstact Smoke Red Blue">
+							</div>
+						</div>
+
+
+						<div class="item__descr descr-item">
+
+							<div class="descr-item__favorite">
+								<h3 class="descr-item__title">Abstact Smoke Red Blue</h3>
+								<div class="descr-item__like">
+									<span class="descr-item__quantity _icon-favorite-active">92</span>
+								</div>
+							</div>
+
+							<div class="descr-item__available available-item">
+								<div class="available-item__purchase">From <b>4.5 ETH</b> <span class="available-item__separator"></span>20 of 25 available</div>
+							</div>
+
+							<div class="descr-item__creator creator-item">
+								<div class="creator-item__text">Creator</div>
+								<div class="creator-item__person">
+									<img src="@img/profile/person_1.png" alt="Avatar">
+									<div class="creator-item__name">Mia Ayana</div>
+								</div>
+							</div>
+
+							<div data-tabs data-tabs-animate="500" class="descr-item__info info-item">
+								<nav data-tabs-titles class="info-item__list">
+									<button type="button" class="info-item__title">Details</button>
+									<button type="button" class="info-item__title">Offers</button>
+									<button type="button" class="info-item__title">History</button>
+								</nav>
+								<div data-tabs-body class="info-item__content">
+									<div class="info-item__text">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+									</div>
+									<div class="info-item__text">
+										Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis eaque doloribus cumque voluptatum vel ratione accusantium accusamus consectetur ullam eligendi?
+									</div>
+									<div class="info-item__text">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores nam incidunt officiis eaque non facere quo ut, nihil quisquam, aliquid tempore repellendus blanditiis eius soluta, unde aliquam! Cumque, corrupti nisi!
+									</div>
+								</div>
+
+							</div>
+
+							<div class="descr-item__buttons">
+								<a href="#" data-popup="#checkout" class="descr-item__button button">Buy for 4.5 ETH</a>
+								<a href="#" class="descr-item__button button">Make Offer</a>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>

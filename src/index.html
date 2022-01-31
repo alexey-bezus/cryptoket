@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="page__main-title main-title">
+				<div class="main-title__container">
+					<div class="main-title__body">
+						<h1 class="main-title__title">Discover, collect, and sell extraordinary NFTs</h1>
+						<div class="main-title__circle main-title__circle_small"></div>
+						<div class="main-title__circle main-title__circle_big"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__main-slider main-slider">
+				<div class="main-slider__container">
+
+					<div class="main-slider__body">
+
+
+						<h2 class="main-slider__title _title">Top Sellers</h2>
+
+						<div class="main-slider__slider slider-main swiper">
+
+							<div class="slider-main__swiper swiper-wrapper">
+								<div class="slider-main__slide swiper-slide">
+									<div class="slider-main__content">
+										<span>1</span>
+										<a href="profile.html" target="_blank" class="slider-main__image-ibg"><img src="@img/main-slider/seller_1.png" alt="Seller"></a>
+										<div class="slider-main__mark"></div>
+										<div class="slider-main__user">Mia Ayana</div>
+										<div class="slider-main__cash">
+											<div class="slider-main__amount">5.250</div>
+											<div class="slider-main__currency">ETH</div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-main__slide swiper-slide">
+									<div class="slider-main__content">
+										<span>2</span>
+										<a href="#" class="slider-main__image-ibg"><img src="@img/main-slider/seller_2.png" alt="Seller"></a>
+										<div class="slider-main__mark"></div>
+										<div class="slider-main__user">Rian Leon</div>
+										<div class="slider-main__cash">
+											<div class="slider-main__amount">4.932</div>
+											<div class="slider-main__currency">ETH</div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-main__slide swiper-slide">
+									<div class="slider-main__content">
+										<span>3</span>
+										<a href="#" class="slider-main__image-ibg"><img src="@img/main-slider/seller_3.png" alt="Seller"></a>
+										<div class="slider-main__mark"></div>
+										<div class="slider-main__user">Lady Young</div>
+										<div class="slider-main__cash">
+											<div class="slider-main__amount">4.620</div>
+											<div class="slider-main__currency">ETH</div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-main__slide swiper-slide">
+									<div class="slider-main__content">
+										<span>4</span>
+										<a href="#" class="slider-main__image-ibg"><img src="@img/main-slider/seller_4.png" alt="Seller"></a>
+										<div class="slider-main__mark"></div>
+										<div class="slider-main__user">Black Glass</div>
+										<div class="slider-main__cash">
+											<div class="slider-main__amount">4.125</div>
+											<div class="slider-main__currency">ETH</div>
+										</div>
+									</div>
+								</div>
+								<div class="slider-main__slide swiper-slide">
+									<div class="slider-main__content">
+										<span>5</span>
+										<a href="#" class="slider-main__image-ibg"><img src="@img/main-slider/seller_5.png" alt="Seller"></a>
+										<div class="slider-main__mark"></div>
+										<div class="slider-main__user">Budhiman</div>
+										<div class="slider-main__cash">
+											<div class="slider-main__amount">3.921</div>
+											<div class="slider-main__currency">ETH</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="slider-main__arrows slider-arrows">
+								<button type="button" class="slider-arrow slider-arrow_prev _icon-arrow-left"></button>
+								<button type="button" class="slider-arrow slider-arrow_next _icon-arrow-left"></button>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+
+			<section class="page__bids bids">
+				<div class="bids__container">
+					<h2 class="bids__title _title">Hot Bids</h2>
+					@@include('html/_products__gallery.htm',{})
+				</div>
+			</section>
+
+	</div>
+
+	</main>
+	@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+//========================================================================================================================================================
+._title {
+	font-weight: 600;
+	@include adaptiveValue("font-size", 28, 22);
+	line-height: math.div(24, 28);
+}
+
+._logo-title {
+	font-weight: 700;
+	font-size: rem(18);
+	line-height: math.div(17, 18);
+	margin-left: rem(4);
+}
+
+.slider-arrows {
+	display: flex;
+}
+.slider-arrow {
+	position: relative;
+	pointer-events: auto;
+	font-size: rem(30);
+	// .slider-arrow_prev
+	&_prev {
+	}
+	// .slider-arrow_next
+	&_next {
+		&::before {
+			transform: rotate(-180deg);
+		}
+	}
+}

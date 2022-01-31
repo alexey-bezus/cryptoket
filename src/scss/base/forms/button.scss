@@ -1,0 +1,18 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-weight: 600;
+	color: $accentColor;
+	min-height: rem(40);
+	border: 1px solid $accentColor;
+	border-radius: rem(10);
+	transition: all 0.5s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			color: $mainColor;
+			background: linear-gradient(101.12deg, #eb1484 27.35%, #c91cc3 99.99%, #c81cc5 100%, #c81cc5 100%);
+		}
+	}
+}
